@@ -1,0 +1,18 @@
+#ifndef TM4C_DEEPDIVE_SYSCTL_H
+#define TM4C_DEEPDIVE_SYSCTL_H
+#include "hwreg.h"
+
+#define SYSCTL_BASE 0x400fe000
+
+#define DID0 HWREG32(SYSCTL_BASE + 0x0)
+#define DID1 HWREG32(SYSCTL_BASE + 0x4)
+#define RCGCGPIO HWREG32(SYSCTL_BASE + 0x608)
+
+#define RCGCGPIO_A 0x01
+#define RCGCGPIO_B 0x02
+#define RCGCGPIO_C 0x04
+#define RCGCGPIO_D 0x08
+#define RCGCGPIO_E 0x10
+#define RCGCGPIO_F 0x20
+
+#endif

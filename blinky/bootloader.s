@@ -18,16 +18,16 @@ ISRVector:
 # Usage Fault
     .word InterruptStub
 # Reserved
-    .word 0 
-    .word 0
-    .word 0
-    .word 0
+    .word InterruptStub 
+    .word InterruptStub
+    .word InterruptStub
+    .word InterruptStub
 # SVCall
     .word InterruptStub
 # Debug Monitor
     .word InterruptStub
 # Reserved
-    .word 0
+    .word InterruptStub
 # PendSV
     .word InterruptStub
 # SysTick

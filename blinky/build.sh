@@ -1,7 +1,7 @@
 #!/bin/sh
 
 BINNAME="blinky"
-CFLAGS="-Wl,-T../tm4c123gxl.ld -ffreestanding -nostdlib -mthumb"
+CFLAGS="-Wl,-T../tm4c123gxl.ld -iquote../common/inc -ffreestanding -nostdlib -mthumb"
 PREFIX="arm-none-eabi-"
 CC=$PREFIX"gcc"
 OBJCOPY=$PREFIX"objcopy"
